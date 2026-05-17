@@ -185,6 +185,20 @@ COLORS = {
     for key in TOKENS["dark"]
 }
 
+def resource_root():
+
+    if hasattr(sys, "_MEIPASS"):
+
+        return Path(sys._MEIPASS)
+
+    return Path(__file__).resolve().parent
+
+
+APP_ROOT = resource_root()
+ICON_DIR = APP_ROOT / "assets"
+ICON_PNG = ICON_DIR / "convertoe.png"
+ICON_ICO = ICON_DIR / "convertoe.ico"
+
 # =========================================================
 # HELPERS
 # =========================================================
@@ -258,6 +272,8 @@ class ConverToe(TkinterDnD.Tk):
 
         self.setup_ui()
 
+        self.apply_window_icon()
+
         self.after(50, self.process_ui_queue)
 
     def resolve_color(self, key):
@@ -267,6 +283,24 @@ class ConverToe(TkinterDnD.Tk):
         index = 1 if mode == "Dark" else 0
 
         return COLORS[key][index]
+
+    def apply_window_icon(self):
+
+        try:
+
+            if ICON_PNG.exists():
+
+                self._window_icon = tk.PhotoImage(file=str(ICON_PNG))
+
+                self.iconphoto(True, self._window_icon)
+
+            if ICON_ICO.exists() and os.name == "nt":
+
+                self.iconbitmap(default=str(ICON_ICO))
+
+        except Exception:
+
+            pass
 
     def set_appearance(self, choice):
 

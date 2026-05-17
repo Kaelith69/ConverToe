@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 900 200" role="img" aria-label="ConverToe banner">
+  <rect width="900" height="200" fill="#0d1117"/>
+
+  <g fill="none" stroke="#223146" stroke-width="1.5" opacity="0.75">
+    <path d="M60 48h88"/>
+    <path d="M110 28v40"/>
+    <path d="M740 40h98"/>
+    <path d="M785 18v44"/>
+    <path d="M55 154h112"/>
+    <path d="M736 158h106"/>
+  </g>
+
+  <g fill="#1b2434">
+    <circle cx="82" cy="42" r="14"/>
+    <circle cx="820" cy="38" r="12"/>
+    <rect x="708" y="128" width="58" height="10" rx="5"/>
+    <rect x="804" y="138" width="34" height="10" rx="5"/>
+  </g>
+
+  <g fill="none" stroke="#27466b" stroke-width="1.25" opacity="0.8">
+    <rect x="698" y="54" width="28" height="28" rx="8"/>
+    <rect x="742" y="54" width="28" height="28" rx="8"/>
+    <rect x="786" y="54" width="28" height="28" rx="8"/>
+  </g>
+
+  <text x="450" y="86" fill="#f3f4f6" text-anchor="middle" font-family="system-ui, -apple-system, monospace" font-size="50" font-weight="700">ConverToe</text>
+  <text x="450" y="113" fill="#9aa3b2" text-anchor="middle" font-family="system-ui, -apple-system, monospace" font-size="16">Single-file media conversion, dressed like it cares.</text>
+
+  <g font-family="system-ui, -apple-system, monospace" font-size="12" font-weight="700" text-anchor="middle">
+    <g transform="translate(150 152)">
+      <rect x="0" y="-14" width="78" height="28" rx="14" fill="#151a22" stroke="#2d3645"/>
+      <text x="39" y="5" fill="#d9e1f2">Python</text>
+    </g>
+    <g transform="translate(251 152)">
+      <rect x="0" y="-14" width="110" height="28" rx="14" fill="#151a22" stroke="#2d3645"/>
+      <text x="55" y="5" fill="#d9e1f2">CustomTkinter</text>
+    </g>
+    <g transform="translate(386 152)">
+      <rect x="0" y="-14" width="74" height="28" rx="14" fill="#151a22" stroke="#2d3645"/>
+      <text x="37" y="5" fill="#d9e1f2">Pillow</text>
+    </g>
+    <g transform="translate(478 152)">
+      <rect x="0" y="-14" width="104" height="28" rx="14" fill="#151a22" stroke="#2d3645"/>
+      <text x="52" y="5" fill="#d9e1f2">tkinterdnd2</text>
+    </g>
+    <g transform="translate(609 152)">
+      <rect x="0" y="-14" width="78" height="28" rx="14" fill="#151a22" stroke="#2d3645"/>
+      <text x="39" y="5" fill="#d9e1f2">FFmpeg</text>
+    </g>
+  </g>
+</svg>
