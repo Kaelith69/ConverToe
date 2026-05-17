@@ -116,6 +116,8 @@ python converter.py
 ```text
 .
 ├── converter.py # Single-file desktop app entry point and conversion logic.
+├── ConverToe.iss # Inno Setup script for the Windows installer.
+├── build-installer.ps1 # Helper script that compiles the installer when ISCC is installed.
 ├── assets/ # Runtime icon assets used by the app window on desktop.
 │   ├── convertoe.ico # Windows-friendly desktop icon.
 │   └── convertoe.png # PNG fallback for app icon loading.
@@ -163,6 +165,14 @@ python converter.py
 ### Contributing
 
 If you change the UI or conversion flow, keep the single-file structure coherent, verify the app still launches, and make sure FFmpeg and Pillow behavior still match the supported formats.
+
+### Packaging
+
+To build the Windows installer, install Inno Setup so `ISCC.exe` is on `PATH`, then run:
+
+```powershell
+.\build-installer.ps1
+```
 
 ## Roadmap
 
